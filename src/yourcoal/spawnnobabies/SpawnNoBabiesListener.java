@@ -14,7 +14,6 @@
  */
 package yourcoal.spawnnobabies;
 
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.PigZombie;
 import org.bukkit.entity.Zombie;
@@ -27,7 +26,6 @@ public class SpawnNoBabiesListener implements Listener {
 
 	@EventHandler(priority = EventPriority.LOWEST)
 	public void onCreatureSpawnEvent(CreatureSpawnEvent event) {
-		Bukkit.getLogger().info("SpawnEvent");
 		Entity ent = event.getEntity();
 		
 		if (ent instanceof Zombie) {
